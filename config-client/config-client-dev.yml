@@ -7,7 +7,7 @@ spring:
     config:
       server:
         svn:
-          uri: https://10.7.0.84:8443/svn/SW/软件事业部/01项目区/00研发项目/2015/JAVA框架/03.Code/3.2.Trunk
+          uri: fasfasdf
           search-paths: FrameWork_v3/WebContent/spring-cloud-config-file/config-client
           username: weijisheng
           password: 75454
