@@ -1,20 +1,23 @@
+server:
+  port: 6221
+  
 spring:
-  application:
-    name: config-server
-  profiles:
-    active: subversion
   cloud:
     config:
-      server:
-        svn:
-          uri: http://www.baidu.com
-          search-paths: FrameWork_v3/WebContent/spring-cloud-config-file/config-client
-          username: weijisheng
-          password: 75454
-          default-label: trunk
-  
-    
-server:
-  port: 7001
-  
-  
+      retry:
+        multiplier: 1.1
+        initial-interval: 1000
+        max-interval: 2000
+        max-attempts: 6
+         
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
