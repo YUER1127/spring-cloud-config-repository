@@ -7,7 +7,7 @@ spring:
     config:
       server:
         svn:
-          uri: fasfasdf
+          uri: http://www.baidu.com
           search-paths: FrameWork_v3/WebContent/spring-cloud-config-file/config-client
           username: weijisheng
           password: 75454
