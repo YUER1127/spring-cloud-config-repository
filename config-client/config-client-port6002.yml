@@ -1,0 +1,23 @@
+server:
+  port: 6002
+  
+spring:
+  cloud:
+    config:
+      retry:
+        multiplier: 1.1
+        initial-interval: 1999
+        max-interval: 2000
+        max-attempts: 6
+         
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
