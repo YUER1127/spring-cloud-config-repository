@@ -1,5 +1,5 @@
 server:
-  port: 6331
+  port: 6999
   
 spring:
   cloud:
