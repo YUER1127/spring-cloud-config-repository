@@ -1,1 +1,14 @@
-ser
+server:
+  port: 8013
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  rabbitmq:
+    host: 10.7.3.122
+    port: 5672
+    username: springcloudbus
+    password: springcloudbus
