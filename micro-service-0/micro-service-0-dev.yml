@@ -6,3 +6,9 @@ management:
     web:
       exposure:
         include: '*'
+spring:
+  rabbitmq:
+    host: 10.7.3.122
+    port: 5672
+    username: springcloudbus
+    password: springcloudbus
