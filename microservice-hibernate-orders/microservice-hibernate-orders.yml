@@ -1,0 +1,13 @@
+server:
+  port: 8318
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/orders-hibernate?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
