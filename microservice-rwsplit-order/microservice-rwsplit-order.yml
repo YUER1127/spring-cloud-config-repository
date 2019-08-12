@@ -1,1 +1,210 @@
+server:
+  port: 8418
+  tomcat:
+    uri-encoding: UTF-8 
 
+write:
+  angel:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-write-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+    
+
+read:
+  angel:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-read-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+      
+  brixton:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-read-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+      
+  camden:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-read-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+      
+  dalston:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-read-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+      
+  edgware:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-read-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+      
+  finchley:
+    datasource:
+      username: root
+      password: 
+      url: jdbc:mysql://127.0.0.1:3306/order-read-angel?useSSL=false&useUnicode=true&characterEncoding=utf8
+      # 最大连接数
+      maxActive: 1000
+      # 连接池初始化大小
+      initialSize: 10
+      # 获取连接的最大等待时间，单位毫秒
+      maxWait: 60000
+      # 最小保留数
+      minIdle: 500
+      # 检测关闭空闲连接的间隔时间，单位毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接的最小生存时间，，单位毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat, wall, slf4j
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
