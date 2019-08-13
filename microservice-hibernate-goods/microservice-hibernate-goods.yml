@@ -11,3 +11,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: update
+      
+  zipkin:
+    base-url: http://localhost:9412
